@@ -18,7 +18,7 @@ func main() {
 	pflag.Parse()
 	viper.BindPFlags(pflag.CommandLine)
 	ctx := context.Background()
-	proj := "ply-squad06-b70d"
+	proj := "dummy_project_id"
 	topicName := "my-topic"
 	client, err := pubsub.NewClient(ctx, proj)
 	if err != nil {
